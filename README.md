@@ -11,18 +11,32 @@ RefactoCNN-System is a research-oriented tool designed to detect and prioritize 
 📂 Folder Structure
 
 RefactoCNN-System/
+
 ├── data/
+
 │   └── input_code_data.csv
+
 ├── preprocessing/
+
 │   └── preprocess_ast.py
+
 ├── model/
+
 │   └── refactocnn_model.py
+
 ├── explainability/
+
 │   └── gradcam_utils.py
+
 ├── results/
+
 │   └── output_plots/
+
+
 ├── main.py
+
 ├── requirements.txt
+
 
 📝 Requirements
 - Python 3.10+
