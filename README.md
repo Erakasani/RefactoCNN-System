@@ -47,14 +47,17 @@ RefactoCNN-System/
 - NumPy, pandas, matplotlib
 Install all dependencies using:
 pip install -r requirements.txt
+
 🚀 How to Run
 Run the main script with:
 python main.py
 Customize paths in main.py for dataset and model output.
+
 📊 Output
 - Classification metrics (Precision, Recall, F1, Accuracy)
 - Grad-CAM heatmaps
 - CSV of predictions with true/false positives
+
 📄 Citation
 Please cite our paper if you use this codebase:
 
