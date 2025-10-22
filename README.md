@@ -1,13 +1,16 @@
 RefactoCNN-System
 An Optimized Deep Learning Framework for Predicting Software Refactoring Opportunities Using CNN-Based Code Analysis.
+
 📌 Overview
 RefactoCNN-System is a research-oriented tool designed to detect and prioritize refactoring opportunities in source code. It combines AST-based code representations with token embeddings and utilizes a Convolutional Neural Network (CNN) for effective classification. The framework supports explainability via Grad-CAM visualizations.
+
 🧠 Key Features
 - Dual embedding: AST + token-based representation
 - Multi-channel CNN architecture
 - Grad-CAM-based interpretability
 - Compatible with Java-based codebases
 - Evaluation metrics: Accuracy, Precision, Recall, F1-Score
+
 📂 Folder Structure
 
 RefactoCNN-System/
