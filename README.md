@@ -175,7 +175,7 @@ RefactoCNN-System/
 Clone the repository
 
 ```
-git clone https://github.com/yourusername/RefactoCNN-System.git
+git clone https://github.com/Erakasani/RefactoCNN-System
 cd RefactoCNN-System
 ```
 
