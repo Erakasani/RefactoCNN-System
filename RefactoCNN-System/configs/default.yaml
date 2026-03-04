@@ -1,0 +1,39 @@
+project_name: RefactoCNN-System
+
+paths:
+  segments_jsonl: data/interim/segments.jsonl
+  features_pt: data/processed/features.pt
+  splits_dir: data/splits
+  models_dir: artifacts/models
+  logs_dir: artifacts/logs
+  reports_dir: artifacts/reports
+
+data:
+  max_tokens: 256
+  max_ast_nodes: 256
+  embed_dim: 64
+  fuse_ast: true
+  train_ratio: 0.8
+  val_ratio: 0.1
+  test_ratio: 0.1
+  random_seed: 42
+
+model:
+  conv1_filters: 64
+  conv2_filters: 128
+  kernel_size: 3
+  dropout: 0.5
+  num_classes: 2
+
+train:
+  batch_size: 64
+  epochs: 20
+  lr: 0.001
+  weight_decay: 0.0
+  early_stop_patience: 5
+  lr_patience: 3
+  lr_factor: 0.5
+  class_weight: auto   # auto | none | [w0,w1]
+
+inference:
+  threshold: 0.5

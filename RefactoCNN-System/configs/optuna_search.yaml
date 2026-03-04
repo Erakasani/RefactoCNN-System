@@ -1,0 +1,53 @@
+paths:
+  features_pt: data/processed/features.pt
+  logs_dir: artifacts/logs
+  models_dir: artifacts/models
+  reports_dir: artifacts/reports
+
+data:
+  fuse_ast: true
+  embed_dim: 64
+  train_ratio: 0.8
+  val_ratio: 0.1
+  random_seed: 42
+
+train:
+  epochs: 20
+  early_stop_patience: 5
+
+optuna:
+  study_name: refactocnn_optuna
+  direction: maximize
+  n_trials: 30
+  timeout_sec: null
+  sampler: tpe
+  pruner: median
+
+search_space:
+  lr:
+    type: loguniform
+    low: 1.0e-4
+    high: 5.0e-3
+  weight_decay:
+    type: loguniform
+    low: 1.0e-6
+    high: 1.0e-2
+  batch_size:
+    type: categorical
+    choices: [32, 64, 128]
+  conv1_filters:
+    type: categorical
+    choices: [32, 64, 96]
+  conv2_filters:
+    type: categorical
+    choices: [64, 128, 160]
+  kernel_size:
+    type: categorical
+    choices: [3, 5]
+  dropout:
+    type: uniform
+    low: 0.2
+    high: 0.6
+  class_weight:
+    type: categorical
+    choices: [auto, none]
