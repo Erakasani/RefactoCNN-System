@@ -396,22 +396,15 @@ Possible future extensions include:
 
 # 18. Citation
 
-If you use this repository in academic research, please cite:
+If you are using this repository or the corresponding research work, please cite the following paper:
 
 ```
 @article{RefactoCNN,
-title={RefactoCNN: A Deep Learning Framework for Automated Code Refactoring Detection Using Token–AST Fusion},
-author={...},
-journal={...},
-year={2026}
+title={RefactoCNN: A Deep Learning Framework for Automated Code Refactoring Detection Using Token–AST Fusion}
 }
 ```
 
 ---
-
-# 19. Contact
-
-For questions, issues, or collaboration opportunities, please open an **issue in this repository**.
 
 # 20. License
 
